@@ -10,6 +10,9 @@ app.get('/login', function (req, res) {
 app.get('/aboutme', function (req, res) {
     res.json({ "name": "Ashish Yadav", "About": "Learning Production" });
 })
+app.get('/newthings', function (req, res) {
+    res.send("word hard until you are finished")
+})
 
 
 app.listen(process.env.PORT, () => console.log(`listing at port number ${process.env.PORT}`));
